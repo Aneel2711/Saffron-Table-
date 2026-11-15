@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Saffron Table — exceptional food, warm hospitality, and memorable dining.">
+  <meta name="theme-color" content="#171c19">
+  <title>Saffron Table | Fine Dining</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container navbar">
+      <a class="logo" href="#home" aria-label="Saffron Table home">SAFFRON<span> TABLE.</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+      <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+        <a href="#home" data-i18n="navHome">Home</a>
+        <a href="#about" data-i18n="navAbout">About</a>
+        <a href="#menu" data-i18n="navMenu">Our Menu</a>
+        <a href="#reservation" data-i18n="navReservation">Reservation</a>
+        <a href="#contact" data-i18n="navContact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="language-button" id="languageToggle" type="button">العربية</button>
+        <a class="button button-small" href="#reservation" data-i18n="bookTable">Book a Table</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="hero-content">
+          <p class="eyebrow" data-i18n="heroEyebrow">WELCOME TO SAFFRON TABLE</p>
+          <h1 data-i18n="heroTitle">A Taste of Elegance, A World of Flavor.</h1>
+          <p class="hero-copy" data-i18n="heroCopy">Discover exceptional cuisine, carefully selected ingredients, and unforgettable dining experiences made with passion.</p>
+          <div class="hero-actions">
+            <a class="button" href="#menu" data-i18n="exploreMenu">Explore Menu</a>
+            <a class="button button-outline" href="#reservation" data-i18n="reserveTable">Reserve Your Table</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container about-grid">
+        <div class="about-image">
+          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1100&q=85" alt="Warm and elegant restaurant interior" loading="lazy">
+        </div>
+        <div class="about-copy">
+          <p class="eyebrow" data-i18n="ourStory">OUR STORY</p>
+          <h2 data-i18n="aboutTitle">More Than Just a Restaurant</h2>
+          <p data-i18n="aboutCopy">At Saffron Table, we believe great food brings people together. Our chefs combine traditional inspiration with modern creativity to create dishes worth remembering.</p>
+          <p data-i18n="aboutCopyTwo">Every detail matters, from the freshest ingredients to our welcoming atmosphere.</p>
+          <a class="button" href="#reservation" data-i18n="visitUs">Visit Us</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section menu-section" id="menu">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="specialties">OUR SPECIALTIES</p>
+          <h2 data-i18n="menuTitle">Discover Our Menu</h2>
+          <p data-i18n="menuIntro">Fresh ingredients, authentic flavors, and beautifully prepared dishes.</p>
+        </div>
+        <div class="menu-grid">
+          <article class="food-card">
+            <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=85" alt="Fresh garden salad" loading="lazy">
+            <div class="food-info"><h3 data-i18n="dishSalad">Garden Fresh Salad</h3><p data-i18n="descSalad">Fresh greens, cherry tomatoes, avocado and house dressing.</p><div class="food-bottom"><span class="price">$12</span><span aria-hidden="true">🥗</span></div></div>
+          </article>
+          <article class="food-card">
+            <img src="https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&w=800&q=85" alt="Grilled steak with sides" loading="lazy">
+            <div class="food-info"><h3 data-i18n="dishSteak">Premium Grilled Steak</h3><p data-i18n="descSteak">Tender grilled steak served with seasonal vegetables.</p><div class="food-bottom"><span class="price">$28</span><span aria-hidden="true">🥩</span></div></div>
+          </article>
+          <article class="food-card">
+            <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=800&q=85" alt="Italian pasta" loading="lazy">
+            <div class="food-info"><h3 data-i18n="dishPasta">Creamy Italian Pasta</h3><p data-i18n="descPasta">Homemade pasta with creamy sauce and fresh herbs.</p><div class="food-bottom"><span class="price">$18</span><span aria-hidden="true">🍝</span></div></div>
+          </article>
+          <article class="food-card">
+            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58bd?auto=format&fit=crop&w=800&q=85" alt="Signature beef burger" loading="lazy">
+            <div class="food-info"><h3 data-i18n="dishBurger">Signature Beef Burger</h3><p data-i18n="descBurger">Juicy beef, melted cheese and our signature sauce.</p><div class="food-bottom"><span class="price">$16</span><span aria-hidden="true">🍔</span></div></div>
+          </article>
+          <article class="food-card">
+            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=800&q=85" alt="Chocolate cake" loading="lazy">
+            <div class="food-info"><h3 data-i18n="dishCake">Chocolate Dream Cake</h3><p data-i18n="descCake">Rich chocolate cake with smooth chocolate cream.</p><div class="food-bottom"><span class="price">$9</span><span aria-hidden="true">🍰</span></div></div>
+          </article>
+          <article class="food-card">
+            <img src="https://images.unsplash.com/photo-1513558161293-cdaf765edfd4?auto=format&fit=crop&w=800&q=85" alt="Fresh fruit mocktail" loading="lazy">
+            <div class="food-info"><h3 data-i18n="dishMocktail">Fresh Fruit Mocktail</h3><p data-i18n="descMocktail">Refreshing fruit blend made with fresh seasonal ingredients.</p><div class="food-bottom"><span class="price">$7</span><span aria-hidden="true">🍹</span></div></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section special-section">
+      <div class="container special-grid">
+        <div>
+          <p class="eyebrow" data-i18n="chefPick">CHEF'S RECOMMENDATION</p>
+          <h2 data-i18n="specialTitle">Made With Passion, Served With Love.</h2>
+          <p data-i18n="specialCopy">Experience our chef's carefully crafted specialties, where premium ingredients meet unforgettable flavors.</p>
+          <a class="button" href="#reservation" data-i18n="bookExperience">Book Your Experience</a>
+        </div>
+        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1100&q=85" alt="Chef's selection of beautifully presented food" loading="lazy">
+      </div>
+    </section>
+
+    <section class="section reservation-section" id="reservation">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="bookEyebrow">BOOK A TABLE</p>
+          <h2 data-i18n="reservationTitle">Make a Reservation</h2>
+          <p data-i18n="reservationIntro">Join us for a memorable dining experience. Reserve your table today.</p>
+        </div>
+        <form class="booking-form" id="bookingForm">
+          <div class="form-grid">
+            <div class="form-group"><label for="guestName" data-i18n="fullName">Full Name</label><input id="guestName" name="name" autocomplete="name" required></div>
+            <div class="form-group"><label for="guestEmail" data-i18n="email">Email Address</label><input id="guestEmail" name="email" type="email" autocomplete="email" required></div>
+            <div class="form-group"><label for="guestPhone" data-i18n="phone">Phone Number</label><input id="guestPhone" name="phone" type="tel" autocomplete="tel" required></div>
+            <div class="form-group"><label for="guestCount" data-i18n="guests">Number of Guests</label><select id="guestCount" name="guests"><option value="1">1</option><option value="2" selected>2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7+</option></select></div>
+            <div class="form-group"><label for="bookingDate" data-i18n="date">Reservation Date</label><input id="bookingDate" name="date" type="date" required></div>
+            <div class="form-group"><label for="bookingTime" data-i18n="time">Reservation Time</label><select id="bookingTime" name="time"><option>12:00 PM</option><option>1:00 PM</option><option>2:00 PM</option><option>6:00 PM</option><option>7:00 PM</option><option>8:00 PM</option><option>9:00 PM</option></select></div>
+          </div>
+          <button class="button submit-button" type="submit" data-i18n="confirmBooking">Send Reservation Request</button>
+          <p class="form-message" id="bookingMessage" role="status" aria-live="polite"></p>
+          <p class="form-note" data-i18n="demoNote">Demo form: requests are saved only in this browser and are not sent to the restaurant.</p>
+        </form>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-heading"><p class="eyebrow" data-i18n="getInTouch">GET IN TOUCH</p><h2 data-i18n="contactTitle">We'd Love to See You</h2></div>
+        <div class="contact-grid">
+          <article class="contact-card"><div class="contact-icon">📍</div><h3 data-i18n="location">Our Location</h3><p>123 Restaurant Street<br>City Center, Your City</p></article>
+          <article class="contact-card"><div class="contact-icon">☎</div><h3 data-i18n="callUs">Call Us</h3><p><a href="tel:+12345678900">+1 234 567 8900</a><br><a href="mailto:info@saffrontable.com">info@saffrontable.com</a></p></article>
+          <article class="contact-card"><div class="contact-icon">◷</div><h3 data-i18n="openingHours">Opening Hours</h3><p data-i18n="hoursText">Monday – Sunday<br>12:00 PM – 10:00 PM</p></article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div><a class="logo" href="#home">SAFFRON<span> TABLE.</span></a><p data-i18n="footerCopy">Exceptional food, warm hospitality, and unforgettable memories.</p></div>
+      <div class="footer-links"><h3 data-i18n="quickLinks">Quick Links</h3><a href="#home" data-i18n="navHome">Home</a><a href="#about" data-i18n="navAbout">About</a><a href="#menu" data-i18n="navMenu">Our Menu</a><a href="#reservation" data-i18n="navReservation">Reservation</a></div>
+      <div class="footer-links"><h3 data-i18n="followUs">Follow Us</h3><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a><a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer">TikTok</a></div>
+    </div>
+    <div class="container footer-bottom">© <span id="year"></span> Saffron Table. <span data-i18n="rights">All rights reserved.</span></div>
+  </footer>
+</body>
+</html>
